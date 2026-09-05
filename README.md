@@ -13,6 +13,21 @@ Kalau mau di VS Code dengan muat-ulang otomatis:
 2. Pasang ekstensi **Live Server** (Ritwick Dey)
 3. Klik kanan `index.html` → **Open with Live Server**
 
+### Sinkronisasi otomatis saat Save
+
+Workspace ini juga merekomendasikan ekstensi **Run On Save** (`emeraldwalk.runonsave`).
+Setelah ekstensi dipasang dan workspace dimuat ulang, setiap Save pada HTML, CSS,
+JavaScript, atau gambar akan menjalankan `auto-sync.cmd`. Perubahan kemudian:
+
+- membuat ulang `dist/iqbal-landing.html`;
+- memperbarui salinan Artifact di folder induk;
+- commit dan push ke GitHub; dan
+- menerbitkan versi terbaru ke Cloudflare Pages.
+
+Komputer harus terhubung internet, Git harus sudah login, dan Wrangler Cloudflare
+harus sudah terautentikasi. `auto-sync.cmd` tidak mengubah `index.html` sumber saat
+build, sehingga Save tidak memicu loop.
+
 ## Isi tiap berkas
 
 ```

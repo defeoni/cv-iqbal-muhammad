@@ -2,11 +2,11 @@
   /* sumi & shu — tetap, tidak ikut berganti tema */
   --sumi:#15110F; --sumi2:#241D19; --kinari:#F4EDE1; --shu:#C62A22; --kin:#C9A227;
   /* Merah torii versi terang, KHUSUS di atas latar sumi. --shu asli cuma
-     berkontras 3,36 di hitam - terbaca menyatu. Yang ini 5,05. */
-  --shu-terang:#E1564F;
+     berkontras 3,36 di hitam - terbaca menyatu. Yang ini 6.55. */
+  --shu-terang:#E77872;
   /* token tema — di-set ulang dari JS tiap kali tempat kerja diklik */
-  --bg:#F4EDE1; --bg2:#E9DECB; --surface:#FFFBF3; --ink:#1A1512; --ink2:#6B6053;
-  --line:#DDCFB5; --accent:#C62A22; --accentInk:#B5261F; --accent2:#1A1512; --accent3:#C9A227;
+  --bg:#F4EDE1; --bg2:#E9DECB; --surface:#FFFBF3; --ink:#1A1512; --ink2:#4E463C;
+  --line:#DDCFB5; --accent:#C62A22; --accentInk:#98201A; --accent2:#1A1512; --accent3:#C9A227;
   --shadow:0 1px 2px rgba(21,17,15,.05), 0 10px 30px -14px rgba(21,17,15,.22);
   --serif:"Shippori Mincho", Georgia, "Times New Roman", serif;
   --sans:"Zen Kaku Gothic New", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -114,7 +114,9 @@ section{max-width:var(--wrap); margin:0 auto; padding:clamp(2.4rem,5vw,3.6rem) 1
 h2{font-size:clamp(1.45rem,3.6vw,2.15rem)}
 .eyebrow{font-family:var(--hand); font-size:1.08rem; color:var(--accentInk); margin-bottom:.1rem}
 .rule{flex:1; height:1px; background:var(--line); min-width:40px; margin-bottom:.6rem}
-.sub{color:var(--ink2); max-width:64ch; margin:-.6rem 0 1.5rem; font-size:.93rem}
+/* Kalimat pengantar tiap seksi. Dulu abu-abu 15px dan menyatu dengan
+   kertas; sekarang hampir hitam dan 2px lebih besar. */
+.sub{color:var(--ink); max-width:64ch; margin:-.6rem 0 1.5rem; font-size:1.06rem}
 .card{background:var(--surface); border:1px solid var(--line); border-radius:14px;
   transition:background-color .8s, border-color .8s, transform .22s, box-shadow .22s}
 .reveal{transition:opacity .7s ease, transform .7s cubic-bezier(.2,.8,.2,1)}
@@ -189,8 +191,8 @@ h2{font-size:clamp(1.45rem,3.6vw,2.15rem)}
 .g4{display:grid; grid-template-columns:repeat(4,1fr); gap:.8rem}
 .pad{padding:1rem 1.15rem}
 .pad h3{font-size:1rem; display:flex; align-items:center; gap:.45rem}
-.pad .mini{font-size:.75rem; color:var(--ink2)}
-.pad p{margin:.45rem 0 0; font-size:.87rem; color:var(--ink2)}
+.pad .mini{font-size:.8rem; color:var(--ink2)}
+.pad p{margin:.45rem 0 0; font-size:.94rem; color:var(--ink2)}
 .gl{font-family:var(--serif); font-size:1.2rem; color:var(--accentInk); line-height:1; flex:none}
 
 /* prestasi */
@@ -217,7 +219,7 @@ h2{font-size:clamp(1.45rem,3.6vw,2.15rem)}
 .fc .tagline2{font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--accentInk); font-weight:700}
 .fc h3{font-size:1.12rem; margin:.35rem 0 .1rem}
 .fc .mini{font-size:.76rem; color:var(--ink2)}
-.fc p{font-size:.87rem; color:var(--ink2); margin:.6rem 0 0; position:relative}
+.fc p{font-size:.94rem; color:var(--ink2); margin:.6rem 0 0; position:relative}
 .chips{display:flex; flex-wrap:wrap; gap:.4rem}
 .chip{display:inline-flex; align-items:baseline; gap:.42rem; padding:.34rem .7rem; border-radius:99px;
   border:1px solid var(--line); background:var(--surface); font-size:.79rem}
@@ -225,7 +227,7 @@ h2{font-size:clamp(1.45rem,3.6vw,2.15rem)}
 
 /* keahlian */
 .sk ul{list-style:none; margin:.55rem 0 0; padding:0; display:grid; gap:.3rem}
-.sk li{font-size:.85rem; padding-left:1.15rem; position:relative; color:var(--ink2)}
+.sk li{font-size:.9rem; padding-left:1.15rem; position:relative; color:var(--ink2)}
 .sk li::before{content:"·"; position:absolute; left:.3rem; color:var(--line); font-size:1.1rem; top:-.15em}
 .sk li.star{color:var(--ink); font-weight:500}
 .sk li.star::before{content:"◆"; color:var(--accentInk); font-size:.6rem; top:.15em; left:.2rem}
@@ -241,9 +243,9 @@ h2{font-size:clamp(1.45rem,3.6vw,2.15rem)}
   background:var(--accentInk); color:#fff; font-family:var(--serif); font-weight:700; font-size:.92rem}
 .mile h3{font-size:.98rem}
 .mile .in{font-family:var(--hand); color:var(--accentInk); font-size:.95rem}
-.mile p{font-size:.84rem; color:var(--ink2); margin-top:.35rem}
+.mile p{font-size:.91rem; color:var(--ink2); margin-top:.35rem}
 .running{display:grid; grid-template-columns:repeat(4,1fr); gap:.6rem; margin-top:.8rem}
-.run{display:flex; gap:.55rem; align-items:flex-start; padding:.7rem .85rem; font-size:.82rem;
+.run{display:flex; gap:.55rem; align-items:flex-start; padding:.7rem .85rem; font-size:.89rem;
   border-radius:11px; background:var(--surface); border:1px solid var(--line); color:var(--ink2)}
 
 /* kutipan + kontak */

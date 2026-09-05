@@ -5,23 +5,23 @@
 // Satu warna tidak bisa melayani latar hampir-hitam DAN hampir-putih sekaligus;
 // itu sebabnya keduanya dipisah. Latar hitam memakai --shu-terang dari style.css.
 const THEMES = {
-  base:    {bg:"#F4EDE1",bg2:"#E9DECB",surface:"#FFFBF3",ink:"#1A1512",ink2:"#6B6053",line:"#DDCFB5",
-            accent:"#C62A22",accentInk:"#B5261F",accent2:"#1A1512",accent3:"#C9A227",glyph:"朱",pat:"seigaiha",
+  base:    {bg:"#F4EDE1",bg2:"#E9DECB",surface:"#FFFBF3",ink:"#1A1512",ink2:"#4E463C",line:"#DDCFB5",
+            accent:"#C62A22",accentInk:"#98201A",accent2:"#1A1512",accent3:"#C9A227",glyph:"朱",pat:"seigaiha",
             doodles:["torii","sakura","fan","koi","moon","lantern","wave","dino"]},
-  mekuru:  {bg:"#F9EEDC",bg2:"#EFDDBF",surface:"#FFFAF0",ink:"#2B1A11",ink2:"#7A5B44",line:"#E2CBA6",
-            accent:"#C3402A",accentInk:"#AA3825",accent2:"#2B1A11",accent3:"#D89A3C",glyph:"麺",pat:"noren",
+  mekuru:  {bg:"#F9EEDC",bg2:"#EFDDBF",surface:"#FFFAF0",ink:"#2B1A11",ink2:"#584131",line:"#E2CBA6",
+            accent:"#C3402A",accentInk:"#902F1F",accent2:"#2B1A11",accent3:"#D89A3C",glyph:"麺",pat:"noren",
             doodles:["bowl","chopsticks","naruto","steam","lantern","noren","sakura","torii"]},
-  rajauduk:{bg:"#F1F5E7",bg2:"#E1ECD2",surface:"#FBFDF5",ink:"#1D2A16",ink2:"#5C6B4A",line:"#CCDCB7",
-            accent:"#B8402C",accentInk:"#AC3C29",accent2:"#2F5A2C",accent3:"#C98A34",glyph:"米",pat:"anyaman",
+  rajauduk:{bg:"#F1F5E7",bg2:"#E1ECD2",surface:"#FBFDF5",ink:"#1D2A16",ink2:"#404A33",line:"#CCDCB7",
+            accent:"#B8402C",accentInk:"#913323",accent2:"#2F5A2C",accent3:"#C98A34",glyph:"米",pat:"anyaman",
             doodles:["cone","leaf","chili","steam","basket","rice","fan","star"]},
-  kementan:{bg:"#EEF3EB",bg2:"#DDE9DB",surface:"#FAFDF9",ink:"#14231A",ink2:"#566356",line:"#C6D6C3",
-            accent:"#1F6242",accentInk:"#1F6242",accent2:"#1B3A26",accent3:"#B08F22",glyph:"農",pat:"graph",
+  kementan:{bg:"#EEF3EB",bg2:"#DDE9DB",surface:"#FAFDF9",ink:"#14231A",ink2:"#404A40",line:"#C6D6C3",
+            accent:"#1F6242",accentInk:"#1D5C3E",accent2:"#1B3A26",accent3:"#B08F22",glyph:"農",pat:"graph",
             doodles:["padi","grid","chart","leaf","stamp","clip","moon","star"]},
-  jfood:   {bg:"#FDF2DC",bg2:"#F9E3B9",surface:"#FFFAEF",ink:"#22190D",ink2:"#7B5326",line:"#EFD59F",
-            accent:"#D2571F",accentInk:"#A44418",accent2:"#22345C",accent3:"#E0A22A",glyph:"鶏",pat:"checker",
+  jfood:   {bg:"#FDF2DC",bg2:"#F9E3B9",surface:"#FFFAEF",ink:"#22190D",ink2:"#5F401D",line:"#EFD59F",
+            accent:"#D2571F",accentInk:"#8B3914",accent2:"#22345C",accent3:"#E0A22A",glyph:"鶏",pat:"checker",
             doodles:["drumstick","fries","flame","clip","chart","star","grid","bowl"]},
-  trusmi:  {bg:"#EDF2FA",bg2:"#DAE5F4",surface:"#FAFCFF",ink:"#10203A",ink2:"#4C5F7C",line:"#C0D2E9",
-            accent:"#B3312A",accentInk:"#B3312A",accent2:"#1B4B8F",accent3:"#3E7CC4",glyph:"雲",pat:"megamendung",
+  trusmi:  {bg:"#EDF2FA",bg2:"#DAE5F4",surface:"#FAFCFF",ink:"#10203A",ink2:"#39485E",line:"#C0D2E9",
+            accent:"#B3312A",accentInk:"#962923",accent2:"#1B4B8F",accent3:"#3E7CC4",glyph:"雲",pat:"megamendung",
             doodles:["cloud","house","key","megaphone","chart","funnel","grid","star"]}
 };
 
