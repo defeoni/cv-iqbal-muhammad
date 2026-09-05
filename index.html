@@ -1,0 +1,58 @@
+<title>Iqbal Muhammad</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency=".022" numOctaves="2" seed="7"/>
+    <feDisplacementMap in="SourceGraphic" scale="4"/></filter>
+</defs></svg>
+
+<div id="bg"></div>
+<div class="pat" id="patA"></div>
+<div class="pat" id="patB"></div>
+<div id="doodles"></div>
+<div id="glyph">朱</div>
+
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="#hero">
+      <svg width="24" height="24" viewBox="0 0 40 40" aria-hidden="true">
+        <rect x="1" y="1" width="38" height="38" rx="6" fill="var(--shu)"/>
+        <path d="M9 13h22M20 13v18M13 31h14M11 9h18" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+      </svg><span>Iqbal Muhammad</span>
+    </a>
+    <div class="navlinks" id="navlinks"></div>
+    <div id="lang" role="group" aria-label="Bahasa / Language">
+      <button data-lang="id" aria-pressed="true">ID</button>
+      <button data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</nav>
+
+<header id="hero">
+  <svg class="torii" viewBox="0 0 200 200" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round">
+    <path d="M14 40q86-16 172 0"/><path d="M18 40q82-10 164 0" stroke-width="4"/>
+    <path d="M30 62h140"/><path d="M52 62v120M148 62v120"/><path d="M62 96h76"/>
+  </svg>
+  <div class="noise"></div>
+  <div class="hero-in" id="heroIn"></div>
+  <div class="stat-row" id="statRow"></div>
+</header>
+
+<main id="app"></main>
+
+<button id="snd" aria-pressed="false" aria-label="Putar musik latar">
+  <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span id="sndLabel">Musik</span>
+</button>
+
+<footer><div class="foot-in"><span id="footL"></span><span id="footR"></span></div></footer>
+
+<script src="js/data.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/app.js"></script>

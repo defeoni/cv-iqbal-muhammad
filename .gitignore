@@ -1,0 +1,9 @@
+dist/
+../deploy-cv/
+deploy-cv/
+__pycache__/
+*.pyc
+img/_GANTI-INI.json
+img/BACA-DULU.txt
+Thumbs.db
+.DS_Store
