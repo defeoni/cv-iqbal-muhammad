@@ -130,16 +130,16 @@ h1 .jp{display:block; font-size:.24em; font-weight:500; letter-spacing:.5em; col
 #road{order:7}
 #personal{order:8}
 #contact{order:9}
-section{max-width:var(--wrap); margin:0 auto; padding:clamp(1.7rem,3.5vw,2.5rem) 1.25rem;
+section{max-width:var(--wrap); margin:0 auto; padding:clamp(1rem,2vw,1.45rem) 1.25rem;
   scroll-margin-top:58px}
-.head{display:flex; align-items:flex-end; gap:.9rem; margin-bottom:1rem; flex-wrap:wrap}
+.head{display:flex; align-items:flex-end; gap:.7rem; margin-bottom:.6rem; flex-wrap:wrap}
 .head .kj{font-family:var(--serif); font-size:1.7rem; color:var(--accentInk); line-height:1; opacity:.85}
 h2{font-size:clamp(1.45rem,3.6vw,2.15rem)}
 .eyebrow{font-family:var(--hand); font-size:1.08rem; color:var(--accentInk); margin-bottom:.1rem}
 .rule{flex:1; height:1px; background:var(--line); min-width:40px; margin-bottom:.6rem}
 /* Kalimat pengantar tiap seksi. Dulu abu-abu 15px dan menyatu dengan
    kertas; sekarang hampir hitam dan 2px lebih besar. */
-.sub{color:var(--ink); max-width:64ch; margin:-.45rem 0 1.05rem; font-size:1.06rem}
+.sub{color:var(--ink); max-width:64ch; margin:-.3rem 0 .65rem; font-size:1.06rem}
 .card{background:var(--surface); border:1px solid var(--line); border-radius:14px;
   transition:background-color .8s, border-color .8s, transform .22s, box-shadow .22s}
 .reveal{transition:opacity .7s ease, transform .7s cubic-bezier(.2,.8,.2,1)}
@@ -227,7 +227,7 @@ h2{font-size:clamp(1.45rem,3.6vw,2.15rem)}
 .aw h3{font-size:.98rem}
 
 /* pendidikan + sertifikasi */
-.feat{display:grid; grid-template-columns:repeat(2,1fr); gap:.8rem; margin:1.4rem 0 .8rem}
+.feat{display:grid; grid-template-columns:repeat(2,1fr); gap:.8rem; margin:.9rem 0 .6rem}
 .fc{margin:0; border-color:var(--accent); position:relative; overflow:hidden}
 .fc figcaption{padding:1.1rem 1.3rem 1.3rem; position:relative}
 .fc figcaption::after{content:attr(data-kj); position:absolute; right:-.1em; bottom:-.32em;
