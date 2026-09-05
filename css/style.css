@@ -74,7 +74,7 @@ nav{position:sticky; top:0; z-index:40; background:var(--sumi); color:var(--kina
   opacity:.3; pointer-events:none}
 #hero .noise{position:absolute; inset:0; opacity:.25; mix-blend-mode:overlay; pointer-events:none;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23m)'/%3E%3C/svg%3E")}
-.hero-in{max-width:var(--wrap); margin:0 auto; padding:clamp(2.2rem,5vw,3.6rem) 1.25rem clamp(1.2rem,3vw,1.8rem);
+.hero-in{max-width:var(--wrap); margin:0 auto; padding:clamp(2.2rem,5vw,3.6rem) 1.25rem clamp(1rem,2.5vw,1.4rem);
   position:relative; display:grid; grid-template-columns:1.3fr .8fr; gap:clamp(1.5rem,4vw,3rem); align-items:center}
 .kicker{display:inline-flex; align-items:center; gap:.5rem; font-size:.74rem; letter-spacing:.14em;
   text-transform:uppercase; color:var(--kin); border:1px solid rgba(201,162,39,.4);
@@ -103,6 +103,10 @@ h1 .jp{display:block; font-size:.24em; font-weight:500; letter-spacing:.5em; col
   border:3px solid var(--shu); box-shadow:0 20px 50px -20px #000; position:relative}
 .portrait img{width:100%; height:100%; object-fit:cover; object-position:50% 20%; display:block}
 .portrait .stamp{position:absolute; bottom:-16px; left:-16px; width:66px; height:66px}
+.hero-principle{margin-top:1rem; padding:.8rem 1rem; border:1px solid rgba(244,237,225,.2); border-radius:12px; text-align:center}
+.hero-principle .kj{font-family:var(--serif); color:var(--shu); font-size:1.3rem}
+.hero-principle p{margin:.25rem 0 0; font-family:var(--serif); font-size:.98rem; line-height:1.45; color:#fff}
+.hero-principle cite{display:block; margin-top:.35rem; color:var(--kin); font-size:.68rem; font-style:normal; letter-spacing:.08em}
 .tategaki{position:absolute; top:4%; left:-2.2rem; writing-mode:vertical-rl;
   font-family:var(--serif); font-size:.82rem; letter-spacing:.42em; color:rgba(244,237,225,.72)}
 
@@ -116,16 +120,26 @@ h1 .jp{display:block; font-size:.24em; font-weight:500; letter-spacing:.5em; col
 .stat small{display:block; color:rgba(244,237,225,.78); font-size:.7rem; line-height:1.3; margin-top:.2rem}
 
 /* ── seksi ── */
-section{max-width:var(--wrap); margin:0 auto; padding:clamp(2.4rem,5vw,3.6rem) 1.25rem;
+#app{display:flex; flex-direction:column}
+#work{order:1}
+#ventures{order:2}
+#certs{order:3}
+#awards{order:4}
+#edu{order:5}
+#skills{order:6}
+#road{order:7}
+#personal{order:8}
+#contact{order:9}
+section{max-width:var(--wrap); margin:0 auto; padding:clamp(1.7rem,3.5vw,2.5rem) 1.25rem;
   scroll-margin-top:58px}
-.head{display:flex; align-items:flex-end; gap:.9rem; margin-bottom:1.3rem; flex-wrap:wrap}
+.head{display:flex; align-items:flex-end; gap:.9rem; margin-bottom:1rem; flex-wrap:wrap}
 .head .kj{font-family:var(--serif); font-size:1.7rem; color:var(--accentInk); line-height:1; opacity:.85}
 h2{font-size:clamp(1.45rem,3.6vw,2.15rem)}
 .eyebrow{font-family:var(--hand); font-size:1.08rem; color:var(--accentInk); margin-bottom:.1rem}
 .rule{flex:1; height:1px; background:var(--line); min-width:40px; margin-bottom:.6rem}
 /* Kalimat pengantar tiap seksi. Dulu abu-abu 15px dan menyatu dengan
    kertas; sekarang hampir hitam dan 2px lebih besar. */
-.sub{color:var(--ink); max-width:64ch; margin:-.6rem 0 1.5rem; font-size:1.06rem}
+.sub{color:var(--ink); max-width:64ch; margin:-.45rem 0 1.05rem; font-size:1.06rem}
 .card{background:var(--surface); border:1px solid var(--line); border-radius:14px;
   transition:background-color .8s, border-color .8s, transform .22s, box-shadow .22s}
 .reveal{transition:opacity .7s ease, transform .7s cubic-bezier(.2,.8,.2,1)}

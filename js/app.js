@@ -8,7 +8,7 @@ function render(){
   $('#heroIn').innerHTML=`
     <div>
       <span class="kicker"><i class="dot"></i>${esc(T(m,'open'))}</span>
-      <h1><span class="jp">履歴</span>Iqbal Muhammad<span class="alias">Defeony · vakansisenja</span></h1>
+      <h1><span class="jp">履歴</span>Iqbal Muhammad<span class="alias">Defeony</span></h1>
       <p class="tagline">${esc(T(m,'tag'))}</p>
       <p class="lede">${esc(T(m,'lede'))}</p>
       <p class="where">⛩ ${esc(T(m,'loc'))}</p>
@@ -26,6 +26,8 @@ function render(){
         <g fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round">
           <path d="M14 18h32M30 18v26M20 44h20M17 30h26"/></g>
       </svg>
+      <div class="hero-principle"><span class="kj">誠</span>
+        <p>${esc(T(DATA.principle,'q'))}</p><cite>${esc(T(DATA.principle,'by'))}</cite></div>
     </div>`;
 
   // angka final ditulis langsung di markup: kalau animasi tidak pernah jalan
@@ -140,8 +142,6 @@ function render(){
       <div class="card pad reveal"><h3><span class="gl">${p.g}</span>${esc(T(p,'t'))}</h3>
         <p>${esc(T(p,'b'))}</p></div>`).join('')}
     </div>
-    <div class="card quote reveal"><span class="kj">誠</span>
-      <p>${esc(T(DATA.principle,'q'))}</p><cite>${esc(T(DATA.principle,'by'))}</cite></div>
   </section>
 
   <section id="contact">${head('contact')}
@@ -153,15 +153,15 @@ function render(){
         <div class="links">
           <a class="btn solid" href="mailto:${c.email}">${c.email}</a>
           <a class="btn" href="${c.linkedin}" target="_blank" rel="noopener">${esc(c.linkedinLabel)}</a>
-          <a class="btn" href="${c.fb}" target="_blank" rel="noopener">${esc(c.fbLabel)}</a>
+          <a class="btn" href="${c.fb}" target="_blank" rel="noopener">Facebook</a>
           <a class="btn" href="${c.cv}" target="_blank" rel="noopener">${esc(c.cvLabel)}</a>
         </div></div>
     </div>
   </section>`;
 
-  $('#navlinks').innerHTML=['work','ventures','awards','edu','certs','skills','road','personal','contact']
+  $('#navlinks').innerHTML=['work','ventures','awards','certs','edu','skills','road','personal','contact']
     .map(k=>`<a href="#${k}">${esc(u(k))}</a>`).join('');
-  $('#footL').textContent='© Iqbal Muhammad · Defeony · vakansisenja';
+  $('#footL').textContent='© Iqbal Muhammad · Defeony';
   $('#footR').textContent=u('noSensitive');
   if(typeof SND!=='undefined')
     $('#sndLabel').textContent = SND.playing ? (LANG==='id'?'Berbunyi':'Playing')

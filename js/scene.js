@@ -10,7 +10,7 @@ const svgUrl=(s)=>`url("data:image/svg+xml,${encodeURIComponent(s)}")`;
 
 const UI={
   work:{id:"Pengalaman Kerja",en:"Work Experience",kj:"職歴"},
-  ventures:{id:"Usaha Sendiri",en:"Own Ventures",kj:"独立"},
+  ventures:{id:"Project",en:"Projects",kj:"企画"},
   awards:{id:"Prestasi",en:"Achievements",kj:"表彰"},
   edu:{id:"Pendidikan",en:"Education",kj:"学歴"},
   certs:{id:"Sertifikasi",en:"Certifications",kj:"資格"},
@@ -31,8 +31,8 @@ const UI={
 
   workSub:{id:"Lima tempat, lima suasana. Klik salah satu — warna, pola latar, coretan, dan aksara di halaman ini berpindah mengikutinya.",
            en:"Five places, five atmospheres. Click one — this page's colours, background pattern, doodles and glyph move with it."},
-  venturesSub:{id:"Selalu ada sesuatu yang ia bangun sendiri di latar belakang — sejak kuliah sampai sekarang.",
-               en:"There has always been something he was building on the side — from university until now."},
+  venturesSub:{id:"Project yang dibangun dari ide menjadi sesuatu yang bisa berjalan.",
+               en:"Projects built from ideas into something that can run."},
   awardsSub:{id:"Tiga pengakuan yang tidak bisa dibeli, dan satu acara yang ia isi sekaligus ia selenggarakan.",
              en:"Three recognitions that cannot be bought, and one event he both ran and taught."},
   eduSub:{id:"Terpisah dari pengalaman kerja dan dari sertifikasi, seperti seharusnya.",
