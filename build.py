@@ -56,17 +56,37 @@ def check_placeholders():
     print("Semua gambar contoh sudah diganti — penanda dihapus.")
 
 
+def stamp_version():
+    """Ganti ?v=... di index.html dengan cap waktu build.
+
+    Tanpa ini, peramban yang pernah membuka situs akan terus menyajikan
+    js/css lama dari cache-nya sendiri sampai kedaluwarsa - perubahan
+    Anda tidak kelihatan, dan memperbaiki header saja tidak menyembuhkan
+    salinan yang terlanjur tersimpan. URL baru = cache baru.
+    """
+    import time
+    cap = time.strftime("%Y%m%d%H%M")
+    p = os.path.join(ROOT, "index.html")
+    s = io.open(p, encoding="utf-8").read()
+    baru, n = re.subn(r'(\.(?:js|css))\?v=[^"]*', r'\1?v=' + cap, s)
+    if n:
+        io.open(p, "w", encoding="utf-8", newline="\n").write(baru)
+    print("Cap versi          : %s (%d berkas)" % (cap, n))
+
+
 def main():
     check_placeholders()
+    stamp_version()
     html = read("index.html")
 
-    # 1. CSS -> <style>
+    # 1. CSS -> <style>   (cap ?v=... diabaikan saat menyatukan)
     css = read("css", "style.css")
-    html = re.sub(r'<link rel="stylesheet" href="css/style\.css">',
+    html = re.sub(r'<link rel="stylesheet" href="css/style\.css(?:\?[^"]*)?">',
                   "<style>\n" + css.rstrip() + "\n</style>", html, count=1)
 
     # 2. semua <script src="js/..."> -> satu blok <script>, urutannya dijaga
-    srcs = re.findall(r'<script src="js/([^"]+)"></script>', html)
+    srcs = [s.split("?")[0] for s in
+            re.findall(r'<script src="js/([^"]+)"></script>', html)]
     if not srcs:
         sys.exit("BERHENTI: tidak ada <script src=\"js/...\"> di index.html")
     bundle = "\n\n".join(read("js", s).rstrip() for s in srcs)
