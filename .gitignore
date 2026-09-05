@@ -7,3 +7,5 @@ img/_GANTI-INI.json
 img/BACA-DULU.txt
 Thumbs.db
 .DS_Store
+.wrangler/
+node_modules/
