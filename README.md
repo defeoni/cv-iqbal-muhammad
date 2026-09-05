@@ -103,3 +103,37 @@ Kalau wrangler minta login lagi: `npx wrangler login`
 Catatan: `build.py` (berkas tunggal) dan `deploy.cmd` (Cloudflare) itu dua jalur
 berbeda dan tidak saling bergantung. Yang di Cloudflare memakai berkas terpisah,
 jadi memuatnya lebih cepat daripada berkas tunggal 1,5 MB.
+
+## Empat tempat, satu perintah
+
+| tempat | alamat | diperbarui oleh |
+|---|---|---|
+| VS Code | `iqbal-landing-src\` | Anda, langsung |
+| GitHub | github.com/defeoni/cv-iqbal-muhammad | `sync.cmd` |
+| Cloudflare | https://cviqbalmuhammad.pages.dev | `sync.cmd` |
+| Artifact Claude | claude.ai/code/artifact/8e09d91b... | minta Claude |
+
+Sesudah mengedit apa pun, jalankan satu perintah:
+
+```
+sync.cmd "ganti foto Mekuru"
+```
+
+Itu merakit berkas tunggal, menyalinnya ke `..\iqbal-landing.html` sebagai bahan
+Artifact, commit + push ke GitHub, lalu menerbitkan ke Cloudflare. Pesan commit
+boleh dikosongkan.
+
+**Satu yang tidak bisa otomatis: Artifact di claude.ai.** Artifact hanya bisa
+diterbitkan dari dalam percakapan Claude — tidak ada webhook, tidak ada CI.
+`sync.cmd` sudah menyiapkan berkasnya; tinggal minta Claude menerbitkan ulang.
+
+### Supaya push saja sudah cukup (tanpa sync.cmd)
+
+Berkas `.github/workflows/deploy.yml` sudah ada tapi tidur. Aktifkan sekali:
+
+1. Buat token di https://dash.cloudflare.com/profile/api-tokens
+   (templat "Edit Cloudflare Workers", atau izin Account > Cloudflare Pages > Edit)
+2. Simpan sebagai rahasia bernama `CLOUDFLARE_API_TOKEN` di
+   https://github.com/defeoni/cv-iqbal-muhammad/settings/secrets/actions
+
+Sesudah itu `git push` saja sudah menerbitkan situs, tanpa laptop menyala.

@@ -1,0 +1,49 @@
+# Terbitkan otomatis ke Cloudflare Pages setiap kali ada push ke main.
+#
+# BELUM AKTIF sampai satu rahasia ditambahkan ke repo ini:
+#
+#   1. Buka https://dash.cloudflare.com/profile/api-tokens
+#   2. Create Token -> gunakan templat "Edit Cloudflare Workers",
+#      atau Custom Token dengan izin:  Account > Cloudflare Pages > Edit
+#   3. Salin tokennya
+#   4. Buka https://github.com/defeoni/cv-iqbal-muhammad/settings/secrets/actions
+#      -> New repository secret
+#      -> Nama:  CLOUDFLARE_API_TOKEN
+#      -> Nilai: token dari langkah 3
+#
+# Account ID sudah tertulis di bawah, jadi tidak perlu dirahasiakan —
+# ID akun bukan kredensial, tidak bisa dipakai tanpa token.
+#
+# Sesudah itu: cukup `git push`, situs terbit sendiri tanpa laptop menyala
+# untuk perintah apa pun. Sebelum itu, pakai sync.cmd di laptop.
+
+name: Terbitkan ke Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Siapkan berkas yang diunggah
+        run: |
+          mkdir -p situs
+          cp index.html situs/
+          cp -r css js img situs/
+          rm -f situs/img/BACA-DULU.txt situs/img/_GANTI-INI.json
+          [ -f _headers ] && cp _headers situs/ || true
+          echo "Berkas siap:"; find situs -type f | wc -l
+
+      - name: Unggah ke Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 551800be30faed31b197f1a5d1d2bccd
+          command: pages deploy situs --project-name=cviqbalmuhammad --branch=main
