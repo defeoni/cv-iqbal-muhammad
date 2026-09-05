@@ -13,6 +13,92 @@
 </defs></svg>
 
 <div id="bg"></div>
+
+<!-- Pemandangan latar, digambar tangan sebagai SVG.
+     Bukan foto stock: bebas lisensi, beberapa kilobita saja, tajam di layar
+     apa pun, dan warnanya ikut berganti tiap kali tema tempat kerja diklik.
+     Ditempel di dasar layar supaya tidak pernah menabrak teks di tengah. -->
+<div id="scenery" aria-hidden="true">
+<svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="langit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="var(--bg)"  stop-opacity="0"/>
+      <stop offset=".55" stop-color="var(--bg2)" stop-opacity=".55"/>
+      <stop offset="1"   stop-color="var(--bg2)" stop-opacity=".9"/>
+    </linearGradient>
+    <linearGradient id="kabut" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="var(--bg)" stop-opacity="0"/>
+      <stop offset="1" stop-color="var(--bg)" stop-opacity=".85"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#langit)"/>
+
+  <!-- matahari terbit -->
+  <circle cx="415" cy="300" r="150" fill="var(--accent)" opacity=".3"/>
+
+  <!-- gunung bersalju, puncaknya di kanan matahari -->
+  <path d="M760 640 L980 268 L1200 640 Z" fill="var(--accent2)" opacity=".2"/>
+  <path d="M916 372 L980 268 L1046 372 q-34 22 -66 4 -30 -18 -64 0 Z" fill="var(--bg)" opacity=".85"/>
+
+  <!-- punggungan berlapis, makin dekat makin pekat -->
+  <path d="M0 660 q170 -96 330 -30 t300 -22 q170 -84 340 6 t330 -34 300 62 v258 H0 Z"
+        fill="var(--accent2)" opacity=".14"/>
+  <path d="M0 716 q210 -74 400 -6 t340 -32 q190 -60 370 24 t490 -22 v220 H0 Z"
+        fill="var(--accent2)" opacity=".2"/>
+
+  <!-- awan pipih ala cetakan kayu -->
+  <g fill="var(--bg)" opacity=".6">
+    <ellipse cx="330" cy="404" rx="132" ry="26"/><ellipse cx="470" cy="424" rx="104" ry="20"/>
+    <ellipse cx="1180" cy="352" rx="120" ry="22"/><ellipse cx="1300" cy="376" rx="86" ry="17"/>
+  </g>
+
+  <!-- pita kabut yang melembutkan peralihan ke teks -->
+  <rect y="470" width="1600" height="200" fill="url(#kabut)"/>
+
+  <!-- barisan cemara kiri -->
+  <g fill="var(--accent2)" opacity=".3">
+    <path d="M84 830 L128 686 L172 830 Z M96 762 L128 700 L160 762 Z M124 830 h8 v34 h-8 Z"/>
+    <path d="M186 846 L222 720 L258 846 Z M218 846 h8 v28 h-8 Z"/>
+    <path d="M-6 852 L40 700 L86 852 Z M36 852 h8 v30 h-8 Z"/>
+    <path d="M268 858 L300 754 L332 858 Z"/>
+  </g>
+
+  <!-- pohon melebar kanan, seperti pinus tua -->
+  <g opacity=".32">
+    <path d="M1432 900 V742 m0 -34 l-52 -46 m52 20 l58 -52 m-58 96 l-40 -32 m40 4 l46 -40"
+          stroke="var(--accent2)" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <g fill="var(--accent2)">
+      <ellipse cx="1364" cy="654" rx="82" ry="24"/><ellipse cx="1508" cy="616" rx="94" ry="26"/>
+      <ellipse cx="1440" cy="576" rx="70" ry="21"/><ellipse cx="1556" cy="682" rx="66" ry="19"/>
+    </g>
+  </g>
+
+  <!-- ranting sakura di kanan atas -->
+  <g opacity=".34">
+    <path d="M1600 96 q-118 26 -186 96 m112 -60 q-40 26 -52 62 m94 -34 q-16 40 -6 74"
+          stroke="var(--accent2)" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <g fill="var(--accent)">
+      <circle cx="1470" cy="146" r="12"/><circle cx="1526" cy="120" r="9"/>
+      <circle cx="1428" cy="196" r="10"/><circle cx="1552" cy="186" r="8"/>
+      <circle cx="1496" cy="212" r="7"/><circle cx="1394" cy="150" r="7"/>
+    </g>
+  </g>
+
+  <!-- ombak seigaiha di dasar -->
+  <g fill="none" stroke="var(--accent2)" stroke-width="3" opacity=".22">
+    <path d="M-40 900 a80 80 0 0 1 160 0 M120 900 a80 80 0 0 1 160 0 M280 900 a80 80 0 0 1 160 0
+             M440 900 a80 80 0 0 1 160 0 M600 900 a80 80 0 0 1 160 0 M760 900 a80 80 0 0 1 160 0
+             M920 900 a80 80 0 0 1 160 0 M1080 900 a80 80 0 0 1 160 0 M1240 900 a80 80 0 0 1 160 0
+             M1400 900 a80 80 0 0 1 160 0"/>
+    <path d="M-40 900 a52 52 0 0 1 104 0 M120 900 a52 52 0 0 1 104 0 M280 900 a52 52 0 0 1 104 0
+             M440 900 a52 52 0 0 1 104 0 M600 900 a52 52 0 0 1 104 0 M760 900 a52 52 0 0 1 104 0
+             M920 900 a52 52 0 0 1 104 0 M1080 900 a52 52 0 0 1 104 0 M1240 900 a52 52 0 0 1 104 0
+             M1400 900 a52 52 0 0 1 104 0"/>
+  </g>
+</svg>
+</div>
+
 <div class="pat" id="patA"></div>
 <div class="pat" id="patB"></div>
 <div id="doodles"></div>

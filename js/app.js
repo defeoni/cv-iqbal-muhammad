@@ -185,7 +185,7 @@ function applyTheme(key){
     PATS[t.pat].replace(/C/g,t.accent2)}</svg>`;
   const [show,hide]=patFlip?[$('#patA'),$('#patB')]:[$('#patB'),$('#patA')];
   show.style.backgroundImage=svgUrl(svg);
-  show.style.opacity='.34'; hide.style.opacity='0'; patFlip=!patFlip;
+  show.style.opacity='.16'; hide.style.opacity='0'; patFlip=!patFlip;
 
   if(typeof SND!=='undefined') SND.setRoot(key);   // nada dasar ikut tempat kerja
   drawDoodles(t.doodles);
