@@ -1,0 +1,12 @@
+{
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.(html|css|js|jpg|jpeg|png|webp)$",
+        "cmd": "cmd.exe /d /c call \"${workspaceFolder}\\auto-sync.cmd\"",
+        "isAsync": true,
+        "silent": false
+      }
+    ]
+  }
+}

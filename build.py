@@ -76,7 +76,10 @@ def stamp_version():
 
 def main():
     check_placeholders()
-    stamp_version()
+    # Saat dipanggil oleh Run on Save, jangan mengubah sumber index.html.
+    # Salinan deploy diberi cap versi oleh sync.cmd agar tidak memicu loop save.
+    if os.environ.get("IQBAL_AUTO_SYNC") != "1":
+        stamp_version()
     html = read("index.html")
 
     # 1. CSS -> <style>   (cap ?v=... diabaikan saat menyatukan)

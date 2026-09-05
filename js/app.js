@@ -75,7 +75,7 @@ function render(){
     <div class="g3">${DATA.education.map(e=>`
       <div class="card pad reveal"><div class="mini">${esc(e.period)} · ${esc(e.score)}</div>
         <h3 style="margin-top:.3rem">${esc(T(e,'deg'))}</h3>
-        <div class="mini" style="color:var(--accent)">${esc(e.inst)}</div>
+        <div class="mini" style="color:var(--accentInk)">${esc(e.inst)}</div>
         <p>${esc(T(e,'note'))}</p></div>`).join('')}
     </div>
   </section>
