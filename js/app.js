@@ -237,7 +237,7 @@ function showJob(key,quiet){
     d.innerHTML=`<div class="dbody"><h3>${esc(u('pickT'))}</h3>
       <p class="lead">${esc(u('pickB'))}</p>
       <div class="swatches">${DATA.jobs.map(x=>`
-        <span class="sw" style="--c:${THEMES[x.key].accent}"><i>${THEMES[x.key].glyph}</i>${
+        <span class="sw" style="--c:${THEMES[x.key].accentInk}"><i>${THEMES[x.key].glyph}</i>${
           esc(x.org.split(' — ')[0])}</span>`).join('')}</div></div>`;
     return;
   }
