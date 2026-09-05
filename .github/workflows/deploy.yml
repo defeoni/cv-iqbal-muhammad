@@ -39,6 +39,16 @@ jobs:
           cp -r css js img situs/
           rm -f situs/img/BACA-DULU.txt situs/img/_GANTI-INI.json
           [ -f _headers ] && cp _headers situs/ || true
+
+          # Stempel versi baru pada tag js/css. Tanpa ini, peramban yang
+          # pernah membuka situs akan menyajikan js lama dari cache-nya
+          # sendiri dan perubahan tidak kelihatan. Sama seperti yang
+          # dilakukan build.py di laptop, tapi untuk jalur push-saja.
+          CAP=$(date -u +%Y%m%d%H%M)
+          sed -i -E "s/(\.(js|css))\?v=[^\"]*/\1?v=$CAP/g" situs/index.html
+          echo "Cap versi: $CAP"
+          grep -o 'v=[0-9]*' situs/index.html | sort -u
+
           echo "Berkas siap:"; find situs -type f | wc -l
 
       - name: Unggah ke Cloudflare Pages
