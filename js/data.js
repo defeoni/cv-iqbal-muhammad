@@ -83,7 +83,7 @@ const DATA = {
       capId:"Kantor BRMP / BSIP Kalimantan Barat — Siantan Hulu, Pontianak",
       capEn:"The BRMP / BSIP West Kalimantan office — Siantan Hulu, Pontianak",
       leadId:"Masa kerja terpanjangnya. Di sinilah Excel jadi bahasa kedua.",
-      leadEn:"His longest tenure. This is where Excel became a second language.",
+      leadEn:"My longest tenure. This is where Excel became a second language.",
       metrics:[{v:"30→15",kId:"hari siklus pelaporan",kEn:"day reporting cycle"},
                {v:"−20%", kId:"pemborosan sumber daya",kEn:"resource waste"},
                {v:"3 thn 4 bln",kId:"masa kerja terpanjang",kEn:"longest tenure"}],
@@ -114,8 +114,8 @@ const DATA = {
       period:"Ags 2025 — Mar 2026", yrs:"8 bln",
       roleId:"Asisten Manajer Toko", roleEn:"Assistant Store Manager",
       kindId:"QSR ayam goreng", kindEn:"Fried-chicken QSR",
-      capId:"J.Chicken Joy Restaurant — toko yang ia jaga tiap hari",
-      capEn:"J.Chicken Joy Restaurant — the store he ran every day",
+      capId:"J.Chicken Joy Restaurant — tempat kerja yang saya rintis dari awal",
+      capEn:"J.Chicken Joy Restaurant — the workplace I helped build from the ground up",
       leadId:"Rp450 juta sebulan, 22 orang, SOP tidak boleh turun.",
       leadEn:"Rp450 million a month, 22 people, an SOP that must not slip.",
       metrics:[{v:"Rp450 jt",kId:"target penjualan/bulan",kEn:"monthly sales target"},
@@ -135,8 +135,8 @@ const DATA = {
       roleId:"SPV Marketing Communication Strategic & Asisten Regional Manager",
       roleEn:"Marketing Communication Strategic SPV & Assistant Regional Manager",
       kindId:"Properti — KPR Subsidi", kindEn:"Property — subsidised housing",
-      capId:"Rumah Ningrat, Plered — produk yang ia pasarkan",
-      capEn:"Rumah Ningrat, Plered — the product he marketed",
+      capId:"Rumah Ningrat, Plered — produk yang saya pasarkan",
+      capEn:"Rumah Ningrat, Plered — the product I marketed",
       leadId:"Lima jabatan sekaligus, satu orang. Produk: Rumah Ningrat.",
       leadEn:"Five job titles at once, one person. Product: Rumah Ningrat.",
       metrics:[{v:"5", kId:"peran dirangkap",kEn:"roles held at once"},
@@ -146,8 +146,8 @@ const DATA = {
                 "Memimpin tim 14 orang dan memantau 16 tenaga sales.",
                 "Menjalankan Meta Ads dan funnel Click-to-WhatsApp untuk produk KPR subsidi.",
                 "Kanvasing wilayah, sales coaching, pelatihan tim, dan pengelolaan anggaran promosi."],
-      pfId:"Kampanye “Dari Akad Rumah, Sampai Anak Pertama” — disusun sendiri, Februari 2026",
-      pfEn:"The “From the deed to the first child” campaign — authored himself, February 2026",
+      pfId:"Kampanye “Dari Akad Rumah, Sampai Anak Pertama” — saya susun sendiri, Februari 2026",
+      pfEn:"The “From the deed to the first child” campaign — authored by me, February 2026",
       // Lima slide dari deck kampanye karyanya sendiri (nama tercetak di sampul).
       // SENGAJA DILEWATI: halaman target unit bulanan, tabel banding kompetitor,
       // dan tiga halaman model keuangan — itu angka internal Trusmi Group, bukan
@@ -203,15 +203,15 @@ const DATA = {
     {inst:"Universitas Tanjungpura", period:"2017 — 2020", score:"IPK 3,64",
      degId:"S1 Agribisnis", degEn:"B.Sc. Agribusiness",
      noteId:"Jurusan yang menyatukan dua hal yang kemudian jadi ciri kariernya: pangan dan bisnis.",
-     noteEn:"The degree that fused the two things his career kept returning to: food and business."},
+     noteEn:"The degree that fused the two things my career kept returning to: food and business."},
     {inst:"SMA Negeri 9 Pontianak", period:"2014 — 2017", score:"Rata-rata 79",
      degId:"Jurusan IPS", degEn:"Social Sciences stream",
      noteId:"Bahasa Indonesia 92, TIK 90 — Matematika 68. Excel dipelajari karena butuh, bukan karena bakat.",
      noteEn:"Indonesian 92, IT 90 — Maths 68. Excel was learned out of need, not talent."},
     {inst:"Kunkwan International Mandarin Training Centre", period:"2026 —", score:"HSK dasar",
      degId:"Kelas percakapan Mandarin", degEn:"Mandarin conversation class",
-     noteId:"Alasannya ia sebut sendiri: bahasa itu mempercepat karier di pasar Asia Tenggara.",
-     noteEn:"His own reason: the language speeds up a career across the Southeast Asian market."}
+     noteId:"Alasan saya mempelajarinya: bahasa itu mempercepat karier di pasar Asia Tenggara.",
+     noteEn:"My reason for learning it: the language speeds up a career across the Southeast Asian market."}
   ],
 
   miniCerts:[
@@ -227,13 +227,13 @@ const DATA = {
     {kj:"経", img:"img/sertifikat-mini-mba.jpg", tagId:"Sertifikat utama", tagEn:"Flagship certificate",
      titleId:"Mini-MBA — Master in General Management", titleEn:"Mini-MBA — Master in General Management",
      meta:"Marketing Institute Indonesia × University of London · 13 Jun 2026 · No. 294/V/III/IX/26",
-     bodyId:"Program manajemen umum setingkat mini-MBA yang ditempuh sambil bekerja penuh sebagai supervisor. Isinya persis yang ia butuhkan untuk naik dari supervisor ke manager: keuangan perusahaan, strategi, dan perilaku organisasi. Diselesaikan bersama tiga sertifikasi profesional lain — Marketing Expert, Business Management, dan Artificial Intelligence Professional — seluruhnya dalam dua bulan.",
+     bodyId:"Program manajemen umum setingkat mini-MBA yang saya tempuh sambil bekerja penuh sebagai supervisor. Isinya persis yang saya butuhkan untuk naik dari supervisor ke manager: keuangan perusahaan, strategi, dan perilaku organisasi. Saya menyelesaikannya bersama tiga sertifikasi profesional lain — Marketing Expert, Business Management, dan Artificial Intelligence Professional — seluruhnya dalam dua bulan.",
      bodyEn:"A mini-MBA-level general management programme, taken while working full time as a supervisor. Its content is exactly what the step from supervisor to manager requires: corporate finance, strategy, and organisational behaviour. Completed alongside three other professional certifications — Marketing Expert, Business Management, and AI Professional — all inside two months."},
     {kj:"環", img:"img/sertifikat-ggmun.jpg", tagId:"Sertifikat internasional", tagEn:"International certificate",
      titleId:"Delegate Goal 13 — Global Goals MUN", titleEn:"Goal 13 Delegate — Global Goals MUN",
      meta:"Nakhon Nayok, Thailand · 4–7 Oktober 2019 · Climate Change Forum",
-     bodyId:"Simulasi sidang PBB tempat peserta berperan sebagai delegasi negara dan bersidang penuh dalam bahasa Inggris. Ia duduk di forum Goal 13 — Perubahan Iklim — di usia 20 tahun, di luar negeri, membawa nama sendiri. Yang diuji bukan hafalan: berdebat dalam bahasa Inggris, menulis position paper, bernegosiasi lintas budaya, dan berpikir cepat di bawah tekanan.",
-     bodyEn:"A UN simulation in which participants serve as country delegates and debate entirely in English. He sat in the Goal 13 forum — Climate Change — at twenty years old, abroad, under his own name. What it tested was not memorisation: arguing in English, writing a position paper, negotiating across cultures, and thinking fast under pressure."}
+     bodyId:"Simulasi sidang PBB tempat saya berperan sebagai delegasi negara dan bersidang penuh dalam bahasa Inggris. Saya duduk di forum Goal 13 — Perubahan Iklim — di usia 20 tahun, di luar negeri, membawa nama sendiri. Yang diuji bukan hafalan: berdebat dalam bahasa Inggris, menulis position paper, bernegosiasi lintas budaya, dan berpikir cepat di bawah tekanan.",
+     bodyEn:"A UN simulation in which I served as a country delegate and debated entirely in English. I sat in the Goal 13 forum — Climate Change — at twenty years old, abroad, under my own name. What it tested was not memorisation: arguing in English, writing a position paper, negotiating across cultures, and thinking fast under pressure."}
   ],
 
   certs:[
@@ -293,11 +293,11 @@ const DATA = {
      descId:"Naik satu tingkat dari supervisor. Modalnya sudah ada: Mini-MBA, pengalaman memimpin 14–30 orang, rekam jejak lintas industri.",
      descEn:"One step up from supervisor. Already in hand: a Mini-MBA, teams of 14–30 led, a cross-industry record."},
     {year:"2031", inId:"5 tahun", inEn:"5 years", titleId:"Jajaran C-Level", titleEn:"C-Level",
-     descId:"Bukan hal asing — ia sudah pernah jadi CEO dan CMO di startup. Bedanya: kali ini di organisasi yang jauh lebih besar.",
-     descEn:"Not unfamiliar — he has been a startup CEO and CMO. The difference: a far larger organisation."},
-    {year:"2036", inId:"10 tahun", inEn:"10 years", titleId:"Bisnis F&B sendiri", titleEn:"His own F&B business",
-     descId:"Kembali ke bidang tempat ia memulai — tapi sebagai pemilik. Tujuh tahun mengelola dapur orang lain adalah persiapannya.",
-     descEn:"Back to where he started — as the owner. Seven years running other people's kitchens was the preparation."}
+     descId:"Bukan hal asing — saya sudah pernah menjadi CEO dan CMO di startup. Bedanya: kali ini di organisasi yang jauh lebih besar.",
+     descEn:"Not unfamiliar — I have been a startup CEO and CMO. The difference: this time in a far larger organisation."},
+    {year:"2036", inId:"10 tahun", inEn:"10 years", titleId:"Bisnis F&B saya sendiri", titleEn:"My own F&B business",
+     descId:"Saya kembali ke bidang tempat saya memulai — tapi sebagai pemilik. Tujuh tahun mengelola dapur orang lain adalah persiapan saya.",
+     descEn:"I am returning to where I started — as the owner. Seven years running other people's kitchens was my preparation."}
   ],
 
   running:[
@@ -308,27 +308,27 @@ const DATA = {
   ],
 
   personal:[
-    {g:"⌨", tId:"Hobi yang ia tulis sendiri", tEn:"The hobbies he wrote himself",
+    {g:"⌨", tId:"Hobi yang saya tulis sendiri", tEn:"The hobbies I wrote myself",
      bId:"Coding, app engineering, dan belajar AI — ketiganya ditulis di kolom hobi, bukan kolom keterampilan.",
      bEn:"Coding, app engineering and learning AI — written in the hobbies field, not the skills field."},
     {g:"竜", tId:"“I'm brontosaurus RawR”", tEn:"“I'm brontosaurus RawR”",
-     bId:"Bio Facebook-nya. Di balik CV penuh angka, ada orang yang memperkenalkan diri sebagai dinosaurus herbivora yang mengaum.",
-     bEn:"His Facebook bio. Behind a CV full of numbers, someone who introduces himself as a roaring herbivorous dinosaur."},
+     bId:"Bio Facebook saya. Di balik CV penuh angka, saya memperkenalkan diri sebagai dinosaurus herbivora yang mengaum.",
+     bEn:"My Facebook bio. Behind a CV full of numbers, I introduce myself as a roaring herbivorous dinosaur."},
     {g:"◉", tId:"Kreator digital", tEn:"Digital creator",
-     bId:"2.800 pengikut di Facebook dan rutin membuat Reels — kemampuan yang tidak pernah ia cantumkan di CV mana pun.",
-     bEn:"2,800 Facebook followers and a steady Reels habit — never once listed on a CV."},
+     bId:"Saya memiliki 2.800 pengikut di Facebook dan rutin membuat Reels — kemampuan yang tidak pernah saya cantumkan di CV mana pun.",
+     bEn:"I have 2,800 Facebook followers and a steady Reels habit — never once listed on my CV."},
     {g:"桜", tId:"Jejak Jepang", tEn:"The Japanese thread",
-     bId:"Seminar ‘Ramadhan in Sakura’ di Japan Corner Untan, kutipan Naruto di profilnya, dan ketepatan waktu ala Jepang dari seorang mentor lama.",
-     bEn:"A ‘Ramadhan in Sakura’ seminar at Japan Corner Untan, a Naruto quote on his profile, and Japanese punctuality from an old mentor."},
+     bId:"Saya pernah mengikuti seminar ‘Ramadhan in Sakura’ di Japan Corner Untan, memakai kutipan Naruto di profil, dan belajar ketepatan waktu ala Jepang dari seorang mentor lama.",
+     bEn:"I attended a ‘Ramadhan in Sakura’ seminar at Japan Corner Untan, use a Naruto quote on my profile, and learned Japanese punctuality from an old mentor."},
     {g:"航", tId:"Tidak terikat satu pulau", tEn:"Not tied to one island",
-     bId:"Pernah tinggal dan bekerja di Pontianak dan Cirebon; melamar sampai Jakarta, Bogor, Bandung, dan Samarinda.",
-     bEn:"Has lived and worked in Pontianak and Cirebon; has applied as far as Jakarta, Bogor, Bandung and Samarinda."}
+     bId:"Saya pernah tinggal dan bekerja di Pontianak dan Cirebon; saya juga melamar sampai Jakarta, Bogor, Bandung, dan Samarinda.",
+     bEn:"I have lived and worked in Pontianak and Cirebon; I have also applied as far as Jakarta, Bogor, Bandung and Samarinda."}
   ],
 
   principle:{
     qId:"Integritas itu kesesuaian antara pikiran, ucapan, dan perlakuan. Tiga-tiganya harus sejalan; kalau satu meleset, dua sisanya ikut batal.",
     qEn:"Integrity is the alignment of thought, word and treatment. All three must agree; if one slips, the other two are void.",
-    byId:"Prinsip hidup — dinyatakan sendiri", byEn:"Life principle — in his own words"
+    byId:"Prinsip hidup saya", byEn:"My life principle"
   },
 
   contact:{
