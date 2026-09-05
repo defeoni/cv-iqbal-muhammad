@@ -121,13 +121,19 @@ boleh dikosongkan.
 diterbitkan dari dalam percakapan Claude — tidak ada webhook, tidak ada CI.
 `sync.cmd` sudah menyiapkan berkasnya; tinggal minta Claude menerbitkan ulang.
 
-### Supaya push saja sudah cukup (tanpa sync.cmd)
+### Push saja juga cukup — sudah aktif
 
-Berkas `.github/workflows/deploy.yml` sudah ada tapi tidur. Aktifkan sekali:
+`git push` sendirian sudah menerbitkan situs. GitHub Actions yang mengerjakan,
+memakai rahasia `CLOUDFLARE_API_TOKEN` yang sudah tersimpan di repo. Laptop
+tidak perlu menjalankan apa pun selain push.
 
-1. Buat token di https://dash.cloudflare.com/profile/api-tokens
-   (templat "Edit Cloudflare Workers", atau izin Account > Cloudflare Pages > Edit)
-2. Simpan sebagai rahasia bernama `CLOUDFLARE_API_TOKEN` di
-   https://github.com/defeoni/cv-iqbal-muhammad/settings/secrets/actions
+Jadi ada dua jalur, dua-duanya sah:
 
-Sesudah itu `git push` saja sudah menerbitkan situs, tanpa laptop menyala.
+- `sync.cmd` - build + push + deploy dari laptop, hasilnya langsung terlihat
+- `git push` - Actions yang menerbitkan, sekitar satu menit kemudian
+
+Keduanya menstempel ulang `?v=` pada tag js/css supaya cache peramban tidak
+menyajikan versi lama. Kalau token Cloudflare-nya suatu saat dicabut, jalur
+`sync.cmd` tetap jalan.
+
+Log tiap penerbitan: https://github.com/defeoni/cv-iqbal-muhammad/actions

@@ -65,7 +65,7 @@ def stamp_version():
     salinan yang terlanjur tersimpan. URL baru = cache baru.
     """
     import time
-    cap = time.strftime("%Y%m%d%H%M")
+    cap = time.strftime("%Y%m%d%H%M", time.gmtime())   # UTC, samakan dengan GitHub Actions
     p = os.path.join(ROOT, "index.html")
     s = io.open(p, encoding="utf-8").read()
     baru, n = re.subn(r'(\.(?:js|css))\?v=[^"]*', r'\1?v=' + cap, s)
