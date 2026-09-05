@@ -1,6 +1,14 @@
+# Gambar dinamai tetap dan tidak pernah berubah isinya -> boleh disimpan lama.
 /img/*
   Cache-Control: public, max-age=31536000, immutable
-/css/*
-  Cache-Control: public, max-age=604800
+
+# Kode dan tampilan BERUBAH tiap kali deploy. Wajib tanya server dulu,
+# kalau tidak peramban akan menyajikan versi lama berhari-hari.
 /js/*
-  Cache-Control: public, max-age=604800
+  Cache-Control: public, max-age=0, must-revalidate
+/css/*
+  Cache-Control: public, max-age=0, must-revalidate
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/index.html
+  Cache-Control: public, max-age=0, must-revalidate

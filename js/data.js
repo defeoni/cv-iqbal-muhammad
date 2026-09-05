@@ -341,7 +341,7 @@ const DATA = {
     // terindeks mesin pencari; nomor telepon di halaman terbuka akan
     // dipanen robot spam. Perekrut yang serius akan mengirim email dulu.
     // Kalau suatu saat mau dipasang lagi, tambahkan kembali:
-    //   wa:"https://wa.me/6285754407351", waLabel:"+62 857-5440-7351",
+    //   wa:"https://wa.me/62XXXXXXXXXXX", waLabel:"+62 XXX-XXXX-XXXX",
     // lalu kembalikan juga tombolnya di js/app.js bagian kontak.
     fb:"https://facebook.com/vakansisenja", fbLabel:"facebook.com/vakansisenja",
     cv:"https://bit.ly/defeonyportofolio", cvLabel:"Portofolio & sertifikat"
