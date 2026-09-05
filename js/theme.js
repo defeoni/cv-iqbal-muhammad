@@ -5,7 +5,7 @@
 // Satu warna tidak bisa melayani latar hampir-hitam DAN hampir-putih sekaligus;
 // itu sebabnya keduanya dipisah. Latar hitam memakai --shu-terang dari style.css.
 const THEMES = {
-  base:    {bg:"#F4EDE1",bg2:"#E9DECB",surface:"#FFFBF3",ink:"#1A1512",ink2:"#4E463C",line:"#DDCFB5",
+  base:    {bg:"#F4EDE1",bg2:"#E9DECB",surface:"#FFFBF3",ink:"#1A1512",ink2:"#3F3731",line:"#DDCFB5",
             accent:"#C62A22",accentInk:"#98201A",accent2:"#1A1512",accent3:"#C9A227",glyph:"朱",pat:"seigaiha",
             doodles:["torii","sakura","fan","koi","moon","lantern","wave","dino"]},
   mekuru:  {bg:"#F9EEDC",bg2:"#EFDDBF",surface:"#FFFAF0",ink:"#2B1A11",ink2:"#584131",line:"#E2CBA6",

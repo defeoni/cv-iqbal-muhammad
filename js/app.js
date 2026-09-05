@@ -13,9 +13,15 @@ function render(){
       <p class="lede">${esc(T(m,'lede'))}</p>
       <p class="where">⛩ ${esc(T(m,'loc'))}</p>
       <div class="cta">
-        <a class="btn solid" href="mailto:${c.email}">${esc(u('mailBtn'))}</a>
-        <a class="btn ghost" href="${c.cv}" target="_blank" rel="noopener">${esc(u('cvBtn'))}</a>
+        <a class="btn solid" href="${c.wa}" target="_blank" rel="noopener">${esc(u('mailBtn'))}</a>
+        <a class="btn ghost" href="#certs">${esc(u('cvBtn'))}</a>
+        <button class="btn ghost cv-download" type="button" aria-expanded="false">${esc(u('cvDownload'))}</button>
         <a class="btn ghost" href="${c.linkedin}" target="_blank" rel="noopener">LinkedIn</a>
+        <div class="cv-options" id="cvOptions" hidden>
+          <span>${esc(u('cvChoose'))}</span>
+          <a href="${c.cvId}" target="_blank" rel="noopener">${esc(u('cvIndonesia'))}</a>
+          <a href="${c.cvEn}" target="_blank" rel="noopener">${esc(u('cvEnglish'))}</a>
+        </div>
       </div>
     </div>
     <div class="portrait">
@@ -151,10 +157,10 @@ function render(){
       <div><h3>Iqbal Muhammad Syaidul Akbar</h3>
         <div class="mini">${esc(T(DATA.meta,'loc'))}</div>
         <div class="links">
-          <a class="btn solid" href="mailto:${c.email}">${c.email}</a>
+          <a class="btn solid" href="${c.wa}" target="_blank" rel="noopener">${esc(u('mailBtn'))}</a>
           <a class="btn" href="${c.linkedin}" target="_blank" rel="noopener">${esc(c.linkedinLabel)}</a>
           <a class="btn" href="${c.fb}" target="_blank" rel="noopener">Facebook</a>
-          <a class="btn" href="${c.cv}" target="_blank" rel="noopener">${esc(c.cvLabel)}</a>
+          <a class="btn" href="#certs">${esc(u('cvBtn'))}</a>
         </div></div>
     </div>
   </section>`;
@@ -313,6 +319,21 @@ document.addEventListener('click',(ev)=>{
     LANG=lang.dataset.lang;
     $$('#lang button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===LANG)));
     render();
+  }
+  const cv=ev.target.closest('.cv-download');
+  if(cv){
+    const options=$('#cvOptions');
+    const isOpen=!options.hidden;
+    options.hidden=isOpen;
+    cv.setAttribute('aria-expanded',String(!isOpen));
+  }
+  const anchor=ev.target.closest('a[href^="#"]');
+  if(anchor){
+    const target=$(anchor.getAttribute('href'));
+    if(target){
+      ev.preventDefault();
+      target.scrollIntoView({behavior:REDUCED?'auto':'smooth',block:'start'});
+    }
   }
 });
 

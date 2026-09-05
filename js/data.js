@@ -6,14 +6,14 @@
    ═══════════════════════════════════════════════════════════════════ */
 const DATA = {
   meta:{
-    tagId:"Ditempatkan di tempat yang berantakan — lalu angkanya bergerak.",
-    tagEn:"Dropped into the mess — then the numbers move.",
-    ledeId:"Tujuh tahun, empat industri, satu pola berulang: operasional yang tahan berdiri di lapangan, disambung data yang tahan diaudit.",
-    ledeEn:"Seven years, four industries, one repeating pattern: operations that survive the floor, joined to data that survives an audit.",
+    tagId:"Saya membantu tim bekerja lebih rapi, terukur, dan siap berkembang.",
+    tagEn:"I help teams work more clearly, measurably, and ready to grow.",
+    ledeId:"Selama tujuh tahun, saya bekerja di bidang kuliner, produksi, pemerintahan, dan pemasaran. Saya terbiasa memimpin operasional, membaca data, dan memastikan rencana benar-benar berjalan.",
+    ledeEn:"Over seven years, I have worked across food service, production, government, and marketing. I lead operations, make sense of data, and turn plans into action.",
     locId:"Losari, Kabupaten Cirebon · bersedia ditempatkan lintas kota",
     locEn:"Losari, Cirebon Regency · open to relocation",
-    openId:"Terbuka untuk peran Manager / Supervisor",
-    openEn:"Open to Manager / Supervisor roles"
+    openId:"Profile Personal",
+    openEn:"Personal Profile"
   },
   stats:[
     {n:7,   suf:"",    labId:"tahun pengalaman", labEn:"years of experience"},
@@ -334,13 +334,9 @@ const DATA = {
   contact:{
     email:"defeony@gmail.com",
     linkedin:"https://linkedin.com/in/defeony", linkedinLabel:"linkedin.com/in/defeony",
-    // Nomor WhatsApp SENGAJA tidak dipasang. Halaman ini publik dan
-    // terindeks mesin pencari; nomor telepon di halaman terbuka akan
-    // dipanen robot spam. Perekrut yang serius akan mengirim email dulu.
-    // Kalau suatu saat mau dipasang lagi, tambahkan kembali:
-    //   wa:"https://wa.me/62XXXXXXXXXXX", waLabel:"+62 XXX-XXXX-XXXX",
-    // lalu kembalikan juga tombolnya di js/app.js bagian kontak.
+    wa:"https://wa.me/6285754407351?text=Halo%20Iqbal%2C%20saya%20ingin%20menghubungi%20Anda%20melalui%20portofolio.",
     fb:"https://facebook.com/vakansisenja", fbLabel:"facebook.com/vakansisenja",
-    cv:"https://bit.ly/defeonyportofolio", cvLabel:"Portofolio & sertifikat"
+    cvId:"https://drive.google.com/uc?export=download&id=1rIMyQ3WIyIoixtQ7Ttr-iJwn25qzYk5L",
+    cvEn:"https://drive.google.com/uc?export=download&id=1AfACDXjAyUH5bu2yG4hXa8n9KPwlH2ds"
   }
 };
