@@ -64,9 +64,9 @@ xcopy img "..\deploy-cv\img\" /e /i /y >nul
 if exist "_headers" copy /y "_headers" "..\deploy-cv\" >nul
 del /q "..\deploy-cv\img\BACA-DULU.txt"   2>nul
 del /q "..\deploy-cv\img\_GANTI-INI.json" 2>nul
-if "%IQBAL_AUTO_SYNC%"=="1" (
-	powershell -NoProfile -ExecutionPolicy Bypass -Command "$p='..\deploy-cv\index.html'; $s=[IO.File]::ReadAllText($p); $cap=[DateTime]::UtcNow.ToString('yyyyMMddHHmm'); $s=[regex]::Replace($s,'(\.(?:js|css))\?v=[^\" ]*','$1?v='+$cap); [IO.File]::WriteAllText($p,$s,(New-Object Text.UTF8Encoding($false)))"
-)
+if not "%IQBAL_AUTO_SYNC%"=="1" goto deploy
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0stamp-deploy.ps1" "%~dp0..\deploy-cv\index.html"
+:deploy
 call npx --yes wrangler@4 pages deploy "..\deploy-cv" --project-name=cviqbalmuhammad --branch=main --commit-dirty=true
 if errorlevel 1 goto :gagal_deploy
 
