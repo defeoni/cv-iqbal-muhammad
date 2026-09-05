@@ -146,6 +146,19 @@ const DATA = {
                 "Memimpin tim 14 orang dan memantau 16 tenaga sales.",
                 "Menjalankan Meta Ads dan funnel Click-to-WhatsApp untuk produk KPR subsidi.",
                 "Kanvasing wilayah, sales coaching, pelatihan tim, dan pengelolaan anggaran promosi."],
+      pfId:"Kampanye “Dari Akad Rumah, Sampai Anak Pertama” — disusun sendiri, Februari 2026",
+      pfEn:"The “From the deed to the first child” campaign — authored himself, February 2026",
+      // Lima slide dari deck kampanye karyanya sendiri (nama tercetak di sampul).
+      // SENGAJA DILEWATI: halaman target unit bulanan, tabel banding kompetitor,
+      // dan tiga halaman model keuangan — itu angka internal Trusmi Group, bukan
+      // milik portofolio pribadi. Poster lowongan juga dilewati: memuat nomor HP.
+      portfolio:[
+        {f:"img/pf-trusmi-1.jpg", cId:"Sampul kampanye Rumah Ningrat", cEn:"Rumah Ningrat campaign cover"},
+        {f:"img/pf-trusmi-2.jpg", cId:"Konsep: mendampingi pelanggan dari pembelian rumah hingga menyambut anak pertama", cEn:"Concept: accompanying the customer from buying the house to welcoming the first child"},
+        {f:"img/pf-trusmi-3.jpg", cId:"Analisis pasar Cirebon — data BPS Jawa Barat dan BPS Indonesia", cEn:"Cirebon market analysis — BPS West Java and BPS Indonesia data"},
+        {f:"img/pf-trusmi-4.jpg", cId:"Segmen sasaran: Young Family Starter, usia 20–35", cEn:"Target segment: Young Family Starter, ages 20–35"},
+        {f:"img/pf-trusmi-5.jpg", cId:"Celah peluang: emotional lifecycle value yang belum digarap developer lain", cEn:"Opportunity gap: emotional lifecycle value no other developer had worked"}
+      ],
       pointsEn:["Five roles at once: Marketing Communication, Sales SPV, PDCA, Assistant Regional Manager and Purchasing.",
                 "Led a team of 14 and monitored 16 salespeople.",
                 "Ran Meta Ads and Click-to-WhatsApp funnels for a subsidised-mortgage product.",
@@ -324,7 +337,12 @@ const DATA = {
   contact:{
     email:"defeony@gmail.com",
     linkedin:"https://linkedin.com/in/defeony", linkedinLabel:"linkedin.com/in/defeony",
-    wa:"https://wa.me/6285754407351", waLabel:"+62 857-5440-7351",
+    // Nomor WhatsApp SENGAJA tidak dipasang. Halaman ini publik dan
+    // terindeks mesin pencari; nomor telepon di halaman terbuka akan
+    // dipanen robot spam. Perekrut yang serius akan mengirim email dulu.
+    // Kalau suatu saat mau dipasang lagi, tambahkan kembali:
+    //   wa:"https://wa.me/6285754407351", waLabel:"+62 857-5440-7351",
+    // lalu kembalikan juga tombolnya di js/app.js bagian kontak.
     fb:"https://facebook.com/vakansisenja", fbLabel:"facebook.com/vakansisenja",
     cv:"https://bit.ly/defeonyportofolio", cvLabel:"Portofolio & sertifikat"
   }

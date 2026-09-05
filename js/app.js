@@ -152,7 +152,6 @@ function render(){
         <div class="mini">${esc(T(DATA.meta,'loc'))}</div>
         <div class="links">
           <a class="btn solid" href="mailto:${c.email}">${c.email}</a>
-          <a class="btn" href="${c.wa}" target="_blank" rel="noopener">WhatsApp ${esc(c.waLabel)}</a>
           <a class="btn" href="${c.linkedin}" target="_blank" rel="noopener">${esc(c.linkedinLabel)}</a>
           <a class="btn" href="${c.fb}" target="_blank" rel="noopener">${esc(c.fbLabel)}</a>
           <a class="btn" href="${c.cv}" target="_blank" rel="noopener">${esc(c.cvLabel)}</a>
