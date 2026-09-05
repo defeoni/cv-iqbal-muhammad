@@ -88,14 +88,8 @@ Halaman ini sudah tayang di **https://cviqbalmuhammad.pages.dev** — Cloudflare
 Pages, gratis, tanpa batas kuota yang realistis untuk halaman sebesar ini, dan
 tidak bergantung pada langganan apa pun.
 
-Untuk menerbitkan ulang sesudah mengedit:
-
-```
-deploy.cmd
-```
-
-Klik dua kali berkas itu. Isinya: menyalin index.html + css + js + img ke folder
-sementara, lalu mengunggahnya lewat wrangler. Akun Cloudflare yang dipakai sudah
+Untuk menerbitkan ulang sesudah mengedit, pakai `sync.cmd` (lihat bagian
+"Empat tempat, satu perintah" di bawah). Akun Cloudflare yang dipakai sudah
 login di laptop ini.
 
 Kalau wrangler minta login lagi: `npx wrangler login`
