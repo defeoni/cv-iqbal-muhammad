@@ -82,8 +82,8 @@ function render(){
     <p class="sub">${esc(u('eduSub'))}</p>
     <div class="g3">${DATA.education.map(e=>`
       <div class="card pad reveal"><div class="mini">${esc(e.period)} · ${esc(e.score)}</div>
-        <h3 style="margin-top:.3rem">${esc(T(e,'deg'))}</h3>
-        <div class="mini" style="color:var(--accentInk)">${esc(e.inst)}</div>
+        <h3 class="edu-degree">${esc(T(e,'deg'))}</h3>
+        <div class="mini edu-inst">${esc(e.inst)}</div>
         <p>${esc(T(e,'note'))}</p></div>`).join('')}
     </div>
   </section>
@@ -102,7 +102,7 @@ function render(){
         </figcaption>
       </figure>`).join('')}
     </div>
-    <h3 style="font-size:.95rem; margin:1.5rem 0 .6rem">${esc(u('miniCertsT'))}</h3>
+    <h3 class="cert-subheading">${esc(u('miniCertsT'))}</h3>
     <div class="g3">${DATA.miniCerts.map(c=>`
       <figure class="card mc reveal">
         <a class="shot" href="${c.img}" target="_blank" rel="noopener"
@@ -110,7 +110,7 @@ function render(){
         <figcaption><b>${esc(T(c,'n'))}</b><span class="mini">${esc(c.meta)}</span></figcaption>
       </figure>`).join('')}
     </div>
-    <h3 style="font-size:.95rem; margin:1.5rem 0 .6rem">${esc(u('moreCerts'))}</h3>
+    <h3 class="cert-subheading">${esc(u('moreCerts'))}</h3>
     <div class="chips reveal">${DATA.certs.map(x=>`
       <span class="chip"><s>${x.y}</s>${esc(x.n)}</span>`).join('')}
     </div>
@@ -122,7 +122,7 @@ function render(){
       <div class="card pad sk reveal"><h3><span class="gl">${s.glyph}</span>${esc(T(s,'title'))}</h3>
         <ul>${s.items.map(it=>`<li class="${it.star?'star':''}">${esc(L(it))}</li>`).join('')}</ul></div>`).join('')}
     </div>
-    <div class="card pad reveal" style="margin-top:.8rem">
+    <div class="card pad reveal languages-card">
       <h3><span class="gl">語</span>${esc(u('langs'))}</h3>
       ${DATA.languages.map(l=>`<div class="lang-row"><span>${esc(T(l,'name'))}</span>
         <span class="bar"><i data-pct="${l.pct}" style="width:${l.pct}%"></i></span><small>${esc(T(l,'lvl'))}</small></div>`).join('')}
@@ -136,7 +136,7 @@ function render(){
         <div><div class="in">${esc(T(r,'in'))}</div><h3>${esc(T(r,'title'))}</h3>
         <p>${esc(T(r,'desc'))}</p></div></div>`).join('')}
     </div>
-    <h3 style="font-size:.95rem; margin:1.4rem 0 .2rem">${esc(u('running'))}</h3>
+    <h3 class="running-heading">${esc(u('running'))}</h3>
     <div class="running">${DATA.running.map(r=>`
       <div class="run reveal"><span class="gl">${r.g}</span><span>${esc(L(r))}</span></div>`).join('')}
     </div>

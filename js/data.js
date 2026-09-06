@@ -7,20 +7,20 @@
 const DATA = {
   meta:{
     tagId:"Saya membantu tim bekerja lebih rapi, terukur, dan siap berkembang.",
-    tagEn:"I help teams work more clearly, measurably, and ready to grow.",
+    tagEn:"I help teams work more clearly, measure results, and stay ready to grow.",
     ledeId:"Selama tujuh tahun, saya bekerja di bidang kuliner, produksi, pemerintahan, dan pemasaran. Saya terbiasa memimpin operasional, membaca data, dan memastikan rencana benar-benar berjalan.",
     ledeEn:"Over seven years, I have worked across food service, production, government, and marketing. I lead operations, make sense of data, and turn plans into action.",
     locId:"Losari, Kabupaten Cirebon · bersedia ditempatkan lintas kota",
     locEn:"Losari, Cirebon Regency · open to relocation",
-    openId:"Profile Personal",
+    openId:"Profil Pribadi",
     openEn:"Personal Profile"
   },
   stats:[
     {n:7,   suf:"",    labId:"tahun pengalaman", labEn:"years of experience"},
-    {n:4,   suf:"",    labId:"industri dilalui", labEn:"industries crossed"},
+    {n:4,   suf:"",    labId:"industri dijalani", labEn:"industries worked across"},
     {n:30,  suf:"+",   labId:"orang, tim terbesar", labEn:"people, largest team"},
     {n:450, suf:" jt", labId:"omzet/bulan dikelola", labEn:"monthly revenue managed"},
-    {n:2.25,suf:" M",  labId:"rupiah pendanaan dimenangkan", labEn:"rupiah funding won"},
+    {n:2.25,suf:" M",  labId:"miliar rupiah pendanaan dimenangkan", labEn:"billion rupiah in funding won"},
     {n:4,   suf:"",    labId:"bahasa dipakai", labEn:"languages spoken"}
   ],
 
@@ -32,7 +32,7 @@ const DATA = {
       capId:"Ramen-ya, lampu chochin, 30+ orang di belakang noren",
       capEn:"A ramen-ya, chochin lanterns, 30+ people behind the noren",
       leadId:"Umur 19 sudah memegang 30+ orang dan mengoordinasi banyak cabang.",
-      leadEn:"At nineteen, already running 30+ people across multiple branches.",
+      leadEn:"At nineteen, I was already leading 30+ people across multiple branches.",
       metrics:[{v:"+20%",kId:"target triwulan",kEn:"quarterly target"},
                {v:"+25%",kId:"efisiensi operasional",kEn:"ops efficiency"},
                {v:"30+", kId:"orang dipimpin",kEn:"people led"}],
@@ -65,7 +65,7 @@ const DATA = {
       capId:"Dapur produksi subuh, daun pisang, dan satu spreadsheet",
       capEn:"A pre-dawn production kitchen, banana leaf, and one spreadsheet",
       leadId:"Dapur produksi yang bocor, ditutup pakai spreadsheet.",
-      leadEn:"A leaking production kitchen, sealed with a spreadsheet.",
+      leadEn:"A leaking production kitchen, fixed with a spreadsheet.",
       metrics:[{v:"−25%",kId:"pemborosan bahan baku",kEn:"raw-material waste"},
                {v:"+30%",kId:"output produksi",kEn:"production output"},
                {v:"−40%",kId:"kelebihan order",kEn:"over-ordering"}],
@@ -82,8 +82,8 @@ const DATA = {
       kindId:"Instansi pemerintah", kindEn:"Government agency",
       capId:"Kantor BRMP / BSIP Kalimantan Barat — Siantan Hulu, Pontianak",
       capEn:"The BRMP / BSIP West Kalimantan office — Siantan Hulu, Pontianak",
-      leadId:"Masa kerja terpanjangnya. Di sinilah Excel jadi bahasa kedua.",
-      leadEn:"My longest tenure. This is where Excel became a second language.",
+      leadId:"Masa kerja terpanjang saya. Di sinilah Excel jadi bahasa kedua.",
+      leadEn:"My longest tenure. This is where Excel became my second language.",
       metrics:[{v:"30→15",kId:"hari siklus pelaporan",kEn:"day reporting cycle"},
                {v:"−20%", kId:"pemborosan sumber daya",kEn:"resource waste"},
                {v:"3 thn 4 bln",kId:"masa kerja terpanjang",kEn:"longest tenure"}],
@@ -332,10 +332,9 @@ const DATA = {
   },
 
   contact:{
-    email:"defeony@gmail.com",
     linkedin:"https://linkedin.com/in/defeony", linkedinLabel:"linkedin.com/in/defeony",
     wa:"https://wa.me/6285754407351?text=Halo%20Iqbal%2C%20saya%20ingin%20menghubungi%20Anda%20melalui%20portofolio.",
-    fb:"https://facebook.com/vakansisenja", fbLabel:"facebook.com/vakansisenja",
+    fb:"https://facebook.com/vakansisenja",
     cvId:"https://drive.google.com/uc?export=download&id=1rIMyQ3WIyIoixtQ7Ttr-iJwn25qzYk5L",
     cvEn:"https://drive.google.com/uc?export=download&id=1AfACDXjAyUH5bu2yG4hXa8n9KPwlH2ds"
   }

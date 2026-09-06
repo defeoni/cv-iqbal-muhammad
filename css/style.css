@@ -220,6 +220,11 @@ h2{font-size:clamp(1.45rem,3.6vw,2.15rem)}
 .g3{display:grid; grid-template-columns:repeat(3,1fr); gap:.8rem}
 .g4{display:grid; grid-template-columns:repeat(4,1fr); gap:.8rem}
 .pad{padding:1rem 1.15rem}
+.edu-degree{margin-top:.3rem}
+.edu-inst{color:var(--accentInk)}
+.cert-subheading{font-size:.95rem; margin:1.5rem 0 .6rem}
+.languages-card{margin-top:.8rem}
+.running-heading{font-size:.95rem; margin:1.4rem 0 .2rem}
 .pad h3{font-size:1rem; display:flex; align-items:center; gap:.45rem}
 .pad .mini{font-size:.8rem; color:var(--ink2)}
 .pad p{margin:.45rem 0 0; font-size:.94rem; color:var(--ink2)}
